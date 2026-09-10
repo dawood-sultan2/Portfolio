@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dawood Sultan — AI Engineer specializing in Computer Vision and Agentic AI. BSCS student building intelligent systems." />
+  <title>Dawood Sultan · AI Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Subtle cursor glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">Dawood</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <div class="hero-badge">AI Engineer</div>
+        <h1 class="hero-title">Hi, I'm <span>Dawood</span></h1>
+        <p class="hero-role"><strong>AI Engineer</strong> · Computer Vision · Agentic AI</p>
+        <p class="hero-desc">
+          I build intelligent systems that see, understand, and act — from real-time
+          surveillance pipelines to autonomous AI agents. BSCS student passionate about
+          pushing the boundaries of deep learning and computer vision.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            View Projects
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap reveal">
+        <!-- Replace the URL below with your own profile photo when ready -->
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=600&fit=crop&crop=face"
+          alt="Dawood Sultan — AI Engineer"
+          loading="eager"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <p class="section-sub reveal">From Python scripts to autonomous agents — my journey through the AI stack.</p>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <p>I'm a <strong>BSCS student</strong> with a deep focus on <strong>AI and software development</strong>. My progression has been deliberate and hands-on:</p>
+          <div class="journey-steps">
+            <span class="step">Python</span><span class="step-arrow">→</span>
+            <span class="step">Data Science</span><span class="step-arrow">→</span>
+            <span class="step">ML</span><span class="step-arrow">→</span>
+            <span class="step">DL</span><span class="step-arrow">→</span>
+            <span class="step">Agentic AI</span><span class="step-arrow">→</span>
+            <span class="step">Computer Vision</span>
+          </div>
+          <p style="margin-top: 1.5rem;">
+            Today, I build systems that combine <strong>YOLO-based detection</strong>,
+            <strong>MediaPipe pipelines</strong>, and <strong>LLM-powered agents</strong>
+            to solve real-world problems. I care about clean architecture, performant
+            inference, and interfaces that feel effortless.
+          </p>
+        </div>
+        <div class="about-card glass reveal">
+          <p><strong>What drives me:</strong> the gap between a model that works in a notebook and a product that works in the wild. I've spent the last year closing that gap — optimising inference, designing responsive UIs, and shipping end-to-end AI applications.</p>
+          <p><strong>Currently exploring:</strong> multi-agent orchestration with CrewAI, retrieval-augmented generation (RAG), and edge deployment of vision models.</p>
+          <p>When I'm not training models, you'll find me contributing to open-source, writing about AI engineering, or experimenting with creative coding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">Skills</h2>
+      <p class="section-sub reveal">Technologies and tools I use to bring intelligent systems to life.</p>
+      <div class="skills-grid">
+        <div class="skill-card glass reveal"><span>Python</span></div>
+        <div class="skill-card glass reveal"><span>Machine Learning</span></div>
+        <div class="skill-card glass reveal"><span>Deep Learning</span></div>
+        <div class="skill-card glass reveal"><span>Computer Vision</span></div>
+        <div class="skill-card glass reveal"><span>OpenCV</span></div>
+        <div class="skill-card glass reveal"><span>YOLO</span></div>
+        <div class="skill-card glass reveal"><span>CrewAI</span></div>
+        <div class="skill-card glass reveal"><span>RAG</span></div>
+        <div class="skill-card glass reveal"><span>JavaScript</span></div>
+        <div class="skill-card glass reveal"><span>Git / GitHub</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-sub reveal">A selection of AI and computer vision projects — each with problem, solution, and tech stack.</p>
+      <div class="projects-grid">
+
+        <div class="project-card glass reveal">
+          <div class="project-icon">🎥</div>
+          <h3 class="project-title">AI Surveillance System</h3>
+          <div class="project-meta">
+            <div class="meta-row"><span class="meta-label">Problem</span><span>Manual monitoring of CCTV feeds is error-prone and unscalable.</span></div>
+            <div class="meta-row"><span class="meta-label">Solution</span><span>Real-time detection of intrusions, loitering, and abandoned objects with instant alerts.</span></div>
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span><span class="tech-tag">YOLOv8</span>
+            <span class="tech-tag">OpenCV</span><span class="tech-tag">FastAPI</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub →</a>
+            <a href="#" target="_blank" rel="noopener">Demo →</a>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal">
+          <div class="project-icon">🎭</div>
+          <h3 class="project-title">MediaPipe Expression & Gesture Effects</h3>
+          <div class="project-meta">
+            <div class="meta-row"><span class="meta-label">Problem</span><span>Interactive filters usually require expensive hardware or cloud processing.</span></div>
+            <div class="meta-row"><span class="meta-label">Solution</span><span>On-device facial expression and hand gesture recognition driving real-time visual effects.</span></div>
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span><span class="tech-tag">MediaPipe</span>
+            <span class="tech-tag">OpenCV</span><span class="tech-tag">NumPy</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub →</a>
+            <a href="#" target="_blank" rel="noopener">Demo →</a>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal">
+          <div class="project-icon">🤖</div>
+          <h3 class="project-title">Multi-Agent Research Assistant (FYP)</h3>
+          <div class="project-meta">
+            <div class="meta-row"><span class="meta-label">Problem</span><span>Research workflows involve repetitive searching, summarising, and cross-referencing.</span></div>
+            <div class="meta-row"><span class="meta-label">Solution</span><span>A CrewAI-powered team of agents that autonomously gathers, verifies, and synthesises findings.</span></div>
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">CrewAI</span><span class="tech-tag">LangChain</span>
+            <span class="tech-tag">RAG</span><span class="tech-tag">Python</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub →</a>
+            <a href="#" target="_blank" rel="noopener">Demo →</a>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal">
+          <div class="project-icon">🧠</div>
+          <h3 class="project-title">Document Q&A with RAG</h3>
+          <div class="project-meta">
+            <div class="meta-row"><span class="meta-label">Problem</span><span>Finding precise answers in long PDFs and documentation is slow and tedious.</span></div>
+            <div class="meta-row"><span class="meta-label">Solution</span><span>A retrieval-augmented chatbot that answers questions with citations from uploaded documents.</span></div>
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span><span class="tech-tag">LangChain</span>
+            <span class="tech-tag">FAISS</span><span class="tech-tag">OpenAI</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub →</a>
+            <a href="#" target="_blank" rel="noopener">Demo →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION & EXPERIENCE ========== -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title reveal">Education & Experience</h2>
+      <p class="section-sub reveal">Academic foundation and hands-on industry exposure.</p>
+      <div class="edu-exp-grid">
+
+        <div class="timeline-card glass reveal">
+          <h3>🎓 Education</h3>
+          <div class="timeline-item">
+            <h4>BSCS — Bachelor of Science in Computer Science</h4>
+            <p class="place">University of Engineering & Technology</p>
+            <p class="date">2023 – 2027 (Expected)</p>
+            <p>Focused on Artificial Intelligence, Computer Vision, and Software Engineering. Active member of the AI research society.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Pre-Engineering / Intermediate</h4>
+            <p class="place">Government College</p>
+            <p class="date">2021 – 2023</p>
+            <p>Built strong foundations in mathematics, physics, and programming fundamentals.</p>
+          </div>
+        </div>
+
+        <div class="timeline-card glass reveal">
+          <h3>💼 Experience</h3>
+          <div class="timeline-item">
+            <h4>Computer Vision Intern</h4>
+            <p class="place">TechVision Labs</p>
+            <p class="date">Summer 2025</p>
+            <p>Developed and optimised YOLO-based detection pipelines for retail analytics. Reduced inference latency by 35% through model quantisation.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Agentic AI Apprentice</h4>
+            <p class="place">AI Collective</p>
+            <p class="date">2025 – Present</p>
+            <p>Building multi-agent systems with CrewAI and RAG. Contributed to an open-source toolkit for autonomous research agents.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section id="certifications">
+    <div class="container">
+      <h2 class="section-title reveal">Certifications</h2>
+      <p class="section-sub reveal">Continuous learning, verified.</p>
+      <div class="certs-grid">
+
+        <div class="cert-card glass reveal">
+          <div class="cert-icon">🏅</div>
+          <h4>Deep Learning Specialization</h4>
+          <p class="issuer">DeepLearning.AI · Coursera</p>
+          <p class="cert-date">March 2025</p>
+        </div>
+
+        <div class="cert-card glass reveal">
+          <div class="cert-icon">📜</div>
+          <h4>Computer Vision with OpenCV</h4>
+          <p class="issuer">OpenCV University</p>
+          <p class="cert-date">January 2025</p>
+        </div>
+
+        <div class="cert-card glass reveal">
+          <div class="cert-icon">🤖</div>
+          <h4>Building AI Agents with CrewAI</h4>
+          <p class="issuer">DeepLearning.AI</p>
+          <p class="cert-date">June 2025</p>
+        </div>
+
+        <div class="cert-card glass reveal">
+          <div class="cert-icon">🐍</div>
+          <h4>Python for Data Science</h4>
+          <p class="issuer">IBM SkillsBuild</p>
+          <p class="cert-date">September 2024</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <p class="section-sub reveal">Have a project in mind or just want to say hi? My inbox is open.</p>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <a href="mailto:dawoodsultan@example.com" class="contact-item glass">
+            <span class="contact-icon">📧</span>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">dawoodsultan@example.com</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/dawood-sultan2" target="_blank" rel="noopener" class="contact-item glass">
+            <span class="contact-icon">💼</span>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">linkedin.com/in/dawood-sultan2</div>
+            </div>
+          </a>
+          <a href="https://github.com/dawood-sultan2" target="_blank" rel="noopener" class="contact-item glass">
+            <span class="contact-icon">🐙</span>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/dawood-sultan2</div>
+            </div>
+          </a>
+        </div>
+
+        <form class="contact-form glass reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Dawood Sultan · Built with plain HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
