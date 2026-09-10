@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
       hamburger.setAttribute('aria-expanded', isOpen);
     });
 
-    // Close menu when a link is clicked (mobile UX)
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
@@ -49,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  /* ---------- 4. CONTACT FORM (UI only — no backend) ---------- */
+  /* ---------- 4. CONTACT FORM (UI only) ---------- */
   const form = document.getElementById('contactForm');
   const status = document.getElementById('formStatus');
 
@@ -61,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const email = form.email.value.trim();
       const message = form.message.value.trim();
 
-      // Simple validation
       if (!name || !email || !message) {
         status.style.color = '#f87171';
         status.textContent = 'Please fill in all fields.';
@@ -75,18 +73,16 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Success feedback
       status.style.color = '#34d399';
       status.textContent = `Thanks, ${name}! Your message has been received.`;
 
       form.reset();
 
-      // Clear the message after a few seconds
       setTimeout(() => { status.textContent = ''; }, 5000);
     });
   }
 
-  /* ---------- 5. CURSOR GLOW (desktop only) ---------- */
+  /* ---------- 5. CURSOR GLOW ---------- */
   const cursorGlow = document.getElementById('cursorGlow');
 
   if (cursorGlow && window.matchMedia('(pointer: fine)').matches) {
@@ -100,7 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
       mouseY = e.clientY;
     });
 
-    // Smooth follow using requestAnimationFrame
     function animateGlow() {
       glowX += (mouseX - glowX) * 0.12;
       glowY += (mouseY - glowY) * 0.12;
@@ -113,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cursorGlow.style.display = 'none';
   }
 
-  /* ---------- 6. SMOOTH ACTIVE NAV HIGHLIGHT ---------- */
+  /* ---------- 6. ACTIVE NAV HIGHLIGHT ---------- */
   const sections = document.querySelectorAll('section[id]');
   const navAnchors = document.querySelectorAll('.nav-links a');
 
